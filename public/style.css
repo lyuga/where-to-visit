@@ -1,0 +1,351 @@
+.logo {
+  padding: 10px;
+}
+
+
+main {
+  padding-top: 5rem;
+  margin: 0px auto 50px auto;
+  text-align: center;
+  background-size: cover;
+  text-align: center;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 84, 122, 0.8),
+      rgba(128, 208, 199, 0.7)
+    ),
+    url('./background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+h1 {
+  padding-top: 150px;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: 1.1px;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+}
+
+h3 {
+  font-family: Work Sans;
+  font-weight: 500;
+  line-height: 1.29;
+  color: #27c19e;
+  padding-left: 5px
+}
+
+p {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.36;
+  text-align: left;
+  color: #4a4a4a;
+  padding-left: 5px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.weather h2 {
+  position: relative;
+  padding: 5px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  visibility: hidden;
+}
+
+.weather h2 {
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 0.78;
+  text-align: left;
+}
+
+.weather {
+  width: 200px;
+  height: 260px;
+  padding: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.weathericon {
+  width: 150px;
+  height: 150px;
+}
+
+.venue {
+  width: 275px;
+  padding: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.venueimage {
+  margin-top: 20px;
+}
+
+#venues h2 {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#destination {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #31d9e4;
+}
+
+.sectiontitle {
+  width: 300px;
+  align-items: center;
+}
+
+.sectiontitle h2 {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 3.4px;
+  text-align: left;
+  color: white;
+}
+
+#venues {
+  display: flex;
+  justify-content: space-around;
+  min-height: 250px;
+  margin-top: 40px;
+}
+
+#weather {
+  display: flex;
+  justify-content: space-around;
+  min-height: 150px;
+  margin: 40px;
+}
+
+#city {
+  width: 286px;
+  height: 46px;
+  border-radius: 4px;
+  border: solid 2.5px #ffffff;
+  background-color: inherit;
+  font-family: Source Sans Pro;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #ffffff;
+}
+
+#button {
+  width: 140px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #27b7c1;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0.94;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+/* Selector */
+.selector select {
+  margin: 20px;
+  background-color: #0563af;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.selector select option {
+  padding: 30px;
+}
+
+
+/* Background-color */
+div.weather, div.venue {
+  background-color: whitesmoke;
+}
+
+
+
+@media (max-width: 860px) {
+  h1 {
+    padding-top: 80px;
+    font-size: 32px;
+  }
+
+  form {
+    margin-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  #venues, #weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .venue, .weather {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+  }
+
+  .weather {
+    padding: 10px 20px;
+    height: 100%;
+  }
+
+  .sectiontitle, .sectiontitle h2, #destination {
+    margin: auto;
+    text-align: center;
+  }
+
+  #button {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+/* Button for temperature conversion */
+.toggle
+{
+    position: relative;
+    width: 74px;
+    height: 36px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: darkgrey;
+    margin-bottom: 10px;
+}
+
+.toggle.r, .toggle.r .layer
+{
+    border-radius: 100px;
+}
+
+
+.checkbox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs
+{
+    z-index: 2;
+}
+
+#convToggle .knobs:before, #convToggle .knobs:after, #convToggle .knobs span
+{
+    position: absolute;
+    top: 4px;
+    width: 20px;
+    height: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    border-radius: 2px;
+    transition: 0.3s ease all;
+}
+
+#convToggle .knobs:before
+{
+    content: '';
+    left: 4px;
+    background-color: #03A9F4;
+}
+
+#convToggle .knobs:after
+{
+    content: '°F';
+    right: 4px;
+    color: #4e4e4e;
+}
+
+#convToggle .knobs span
+{
+    display: inline-block;
+    left: 4px;
+    color: #fff;
+    z-index: 1;
+}
+
+#convToggle .checkbox:checked + .knobs span
+{
+    color: #4e4e4e;
+}
+
+#convToggle .checkbox:checked + .knobs:before
+{
+    left: 42px;
+    background-color: #F44336;
+}
+
+#convToggle .checkbox:checked + .knobs:after
+{
+    color: #fff;
+}
+
+#convToggle .checkbox:checked ~ .layer
+{
+    background-color: #fcebeb;
+}
