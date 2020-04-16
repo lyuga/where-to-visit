@@ -15,7 +15,7 @@ Choosing one of these category limits venues to be recommended based on your int
 ## Technology
 Project is created with:
 - JavaScript
-- JQuery
+- jQuery
 - HTML
 - CSS
 
@@ -23,4 +23,5 @@ API:
 - OpenWeatherMap
 - Foursquare
 
-## Screenshots
+## Screenshot
+![Screenshot](https://raw.githubusercontent.com/lyuga/where-to-visit/screenshots/where-to-visit.png)
