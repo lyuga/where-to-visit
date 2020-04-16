@@ -1,6 +1,7 @@
 # Where to visit
 A travel website built using OpenWeatherMap and Foursquare API to retrieve weather and venue information.
 
+**Live site**: https://lyuga.com/where-to-visit/
 ## Introduction
 In this project, I have built a website for travelers.
 
